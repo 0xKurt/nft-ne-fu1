@@ -2,16 +2,15 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom';
-import { MENU_LINKS, WEBSITE_NAME } from '../data/General';
+import { LOGO, MENU_LINKS, WEBSITE_NAME } from '../data/General';
 import { ConnectButton } from '../web3/components/index'
 
 const Header = () => {
   return (
-    <div className="header">
     <Navbar collapseOnSelect expand="lg" variant="light" fixed="top" className='navbar'>
       <Navbar.Brand as={Link} to="/">
-        {/* <img src={logo} alt={WEBSITE_NAME} className="header-logo-image" /> */}
-        {WEBSITE_NAME}
+        <img src={LOGO} alt={WEBSITE_NAME} className="header-logo-image" />
+        {/* {WEBSITE_NAME} */}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -27,7 +26,6 @@ const Header = () => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-  </div>
   );
 }
 

@@ -1,25 +1,23 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Mint from '../components/Mint';
-import { WELCOME_HEADING, WELCOME_TEXT } from '../data/General';
+import { CLICKMINT } from '../data/General';
+import Image from 'react-bootstrap/Image';
 
 const WelcomeHero = () => {
   return (
-    <Container fluid id='start' className='hero hero-1'>
-      <div className='pd-20'>
-        <Row className='justify-content-md-center heading'>
-          {WELCOME_HEADING}
-        </Row>
-        <Row className='mt-20 justify-content-md-center'>
-          <div style={{ maxWidth: '80%'}}>
-            {WELCOME_TEXT}
-          </div>
-        </Row>
-        <Row className='mt-20 justify-content-md-center'>
-          <Mint />
+    <div className='hero hero-1' >
+      <div className='content-wrapper mt-50'>
+        <Row>
+          <Row style={{width: '100%', justifyContent: 'center'}}>
+              <Image src={CLICKMINT} className='intext-image' />
+          </Row>
+          <Row className='mt-50' style={{width: '100%', justifyContent: 'center'}}>
+              <Mint />
+          </Row>
         </Row>
       </div>
-    </Container>
+    </div>
   );
 }
 

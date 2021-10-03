@@ -5,6 +5,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { css } from "@emotion/react";
 import { FaCheck } from 'react-icons/fa'
 import { ImCross } from 'react-icons/im'
+import { getChainName } from '../utils/networks';
 
 const override = css`
   display: block;
@@ -29,6 +30,7 @@ const TransactionButton = (props) => {
   const [hoverColor, setHoverColor] = useState('')
   const [split, setSplit] = useState(false)
   const [icon, setIcon] = useState(<></>)
+  
 
   const sendTx = () => {
     setMsg(props.language == 'de' ? 'Bitte Transaktion im Wallet bestätigen' : 'Waiting for wallet interaction');
@@ -113,7 +115,7 @@ const TransactionButton = (props) => {
           text={text}
           color={props.colorInactive ? props.colorInactive : 'lightgrey'}
           backgroundColor={props.backgroundColorInactive ? props.backgroundColorInactive : '#f1f1f1'}
-          caption={msg}
+          caption={<><span>{props.language == 'de' ? 'Bitte verbinde dich mit ' : 'Please connect to '}</span><span style={{ marginLeft: '2px', fontWeight: '800', color: props.color ? props.colorConnect : 'dodgerblue' }}>{getChainName(network)}</span></>}
         />}
 
         {/* Waiting for wallet interaction */}
