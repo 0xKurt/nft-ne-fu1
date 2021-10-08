@@ -41,7 +41,7 @@ const Story = () => {
         <div ref={nodeRef} className='pd-60 mt-50 hero-2 hero'>
           <h2>{STORY.heading}</h2>
          {story}
-          {!expand && <Button onClick={toggleExpand}>KEEP READING</Button>}
+          {!expand && <Button className='mt-50' onClick={toggleExpand}>KEEP READING</Button>}
           {isVisible && expand && <Button className='stick-bottom' variant='danger' onClick={toggleExpand}>X</Button> }
         </div>
 
