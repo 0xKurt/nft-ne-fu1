@@ -12,8 +12,8 @@ const Story = () => {
   const [expand, setExpand] = useState(false);
 
   useEffect(() => {
-    if(!expand && STORY.length > 2) {
-      let cutStory = STORY.slice(0,2);
+    if(!expand && STORY.content.length > 2) {
+      let cutStory = STORY.content.slice(0,2);
       setStory(cutStory.map(s => (<>
         <div className='mt-50'>
           <Image className='intext-image' src={s.image} />
@@ -21,13 +21,14 @@ const Story = () => {
         <p className="subhead mt-20" style={{maxWidth: '80%'}}>{s.text}</p>
         </>)))
     } else {
-      setStory(STORY.map(s => (<>
+      setStory(STORY.content.map(s => (<>
         <div className='mt-50'>
           <Image className='intext-image' src={s.image} />
         </div>
         <p className="subhead mt-20" style={{maxWidth: '80%'}}>{s.text}</p>
         </>)))
     }
+    console.log('story')
   },[expand])
 
   const toggleExpand = () => {
@@ -37,10 +38,11 @@ const Story = () => {
 
   return (
 
-        <div ref={nodeRef} className='pd-20 mt-50 hero-2 hero'>
-          {story}
+        <div ref={nodeRef} className='pd-60 mt-50 hero-2 hero'>
+          <h2>{STORY.heading}</h2>
+         {story}
           {!expand && <Button onClick={toggleExpand}>KEEP READING</Button>}
-          {isVisible && expand && <Button className='stick-bottom' variant='outline-secondary' onClick={toggleExpand}>X</Button> }
+          {isVisible && expand && <Button className='stick-bottom' variant='danger' onClick={toggleExpand}>X</Button> }
         </div>
 
   );

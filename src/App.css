@@ -4,6 +4,62 @@
 
   --bg2: rgb(184, 154, 138);
   --fcol2: white;
+
+  --bg3: rgb(97, 110, 49);
+  --fcol3: rgb(56, 56, 56);
+
+  --bg4: rgb(177, 106, 0);
+  --fcol4: rgb(255, 255, 255);
+
+  --bg5: rgb(67, 14, 92);
+  --fcol5: rgb(255, 255, 255);
+}
+
+.hero-1 {
+  color: var(--fcol1);
+  background-color: var(--bg1) !important;
+}
+
+.hero-2 {
+  color: var(--fcol2);
+  background-color: var(--bg2) !important;
+}
+
+.hero-3 {
+  color: var(--fcol3);
+  background-color: var(--bg3) !important;
+}
+
+.hero-4 {
+  color: var(--fcol4);
+  background-color: var(--bg4) !important;
+}
+
+.hero-5 {
+  color: var(--fcol5);
+  background-color: var(--bg5) !important;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  width: 60vh;
+  min-height: 40vh;
+  border-radius: 25px;
+  background-color: white;
+}
+
+
+.small-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  width: 50vh;
+  min-height: 20vh;
+  border-radius: 25px;
+  background-color: white !important;
+  color: rgb(38, 38, 38);
 }
 
 .App {
@@ -43,16 +99,6 @@
   filter: invert(91%) sepia(100%) saturate(0%) hue-rotate(153deg) brightness(106%) contrast(101%);
 }
 
-.hero-1 {
-  color: var(--fcol1);
-  background-color: var(--bg1) !important;
-}
-
-.hero-2 {
-  color: var(--fcol2);
-  background-color: var(--bg2) !important;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -61,7 +107,6 @@
   min-height: calc(100vh + 7px);
   position: relative;
   background: var(--bg1);
-  color: white;
   overflow: hidden;
   vertical-align: middle;
 }
@@ -75,13 +120,9 @@
 
 
 .intext-image {
-  width: 50%;
+  width: 80%;
   max-width: 400px;
 }
-
-.overlay {
-}
-
 
 .subhead::first-letter {
   font-size: 180%;
@@ -131,10 +172,22 @@
   margin-bottom: 15px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+
 .mt-50 {
   margin-top: 50px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
 .mt-100 {
   margin-top: 100px;
 }
@@ -173,4 +226,18 @@
 .pd-30 {
   padding: 30px 30px 30px 30px !important;
   word-wrap: normal;
+}
+
+.pd-50 {
+  padding: 50px 50px 50px 50px !important;
+  word-wrap: normal;
+}
+
+.pd-60 {
+  padding: 60px 60px 60px 60px !important;
+  word-wrap: normal;
+}
+
+.bold {
+  font-weight: bolder;
 }

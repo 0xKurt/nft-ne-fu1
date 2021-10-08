@@ -2,6 +2,9 @@ import logo from './img/logo.png'
 import headerBg from './img/header-bg.png'
 import clickMint from './img/click-mint.png'
 import story1 from './img/story1.png'
+import person1 from './img/person1.jpg'
+import x000 from './img/x000.png'
+import roadmapcard1 from './img/roadmapcard1.png'
 
 // general
 export const WEBSITE_NAME = "Cool NFT"
@@ -20,7 +23,9 @@ export const MENU_LINKS = [
 
 
 // story
-export const STORY = [
+export const STORY = {
+  heading: 'STORY TIME',
+  content: [
   {
     image: story1,
     text: 'HALLO Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
@@ -37,5 +42,82 @@ export const STORY = [
     image: story1,
     text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
   },
+
+]}
+
+export const VIEWITEMS = {
+  heading: 'VIEW THE ITEMS',
+  text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+  buttonText: 'VIEW ON OPENSEA',
+  link: 'http://www.google.de'
+}
+
+export const TEAM = {
+  heading: 'TEAM',
+  team: [
+    {
+      name: 'KING KARL',
+      desc: 'The King',
+      img: person1
+    },
+    {
+      name: 'KING KARL',
+      desc: 'The King',
+      img: person1
+    },
+    {
+      name: 'KING KARL',
+      desc: 'The King',
+      img: person1
+    },
+    {
+      name: 'KING KARL',
+      desc: 'The King',
+      img: person1
+    },
+  ]
+}
+
+export const ROADMAP = {
+  heading: '...our beautiful roadmap',
+  roadmap: [
+    {
+      img: x000,
+      heading: '2000 NFTs',
+      desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+    },
+    {
+      img: x000,
+      heading: '3000 NFTs',
+      desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+    },
+    {
+      img: x000,
+      heading: '4000 NFTs',
+      desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+    },
+    {
+      img: x000,
+      heading: '5000 NFTs',
+      desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+    },
+],
+cards: [
+  {
+    img: roadmapcard1,
+    heading: 'OMG !',
+    desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+  },
+  {
+    img: roadmapcard1,
+    heading: 'YEAH !!!',
+    desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+  },
+  {
+    img: roadmapcard1,
+    heading: 'Hello there',
+    desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+  },
   
 ]
+}

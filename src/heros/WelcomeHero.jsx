@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 const WelcomeHero = () => {
   return (
     <div className='hero hero-1' >
-      <div className='content-wrapper mt-50'>
+      <div className='content-wrapper mt-20'>
         <Row>
           <Row style={{width: '100%', justifyContent: 'center'}}>
               <Image src={CLICKMINT} className='intext-image' />
