@@ -17,7 +17,7 @@ const Roadmap = () => {
                 <h3 className='mt-20'>{r.heading}</h3>
               </Row>
               <Row>
-                <div className=''>
+                <div className='' style={{opacity: '0.8'}}>
                   {r.desc}
                 </div>
               </Row>
@@ -30,7 +30,7 @@ const Roadmap = () => {
                 <h3 className='mt-20'>{r.heading}</h3>
               </Row>
               <Row>
-                <div className=''>
+                <div className='' style={{opacity: '0.8'}}>
                   {r.desc}
                 </div>
               </Row>
@@ -50,7 +50,7 @@ const Roadmap = () => {
           <div className='mt-20 bold'>
             <h5>{c.heading}</h5>
           </div>
-          <div className='mt-20'>
+          <div className='mt-20' style={{opacity: '0.8'}}>
             {c.desc}
           </div>
           </div>
