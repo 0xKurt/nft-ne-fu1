@@ -15,14 +15,14 @@ const Story = () => {
     if (!expand && STORY.content.length > 2) {
       let cutStory = STORY.content.slice(0, 2);
       setStory(cutStory.map(s => (<>
-        <div className='mt-50'>
+        <div className='mt-100'>
           <Image className='intext-image' src={s.image} />
         </div>
         <p className="subhead mt-20" style={{ maxWidth: '60%' }}>{s.text}</p>
       </>)))
     } else {
       setStory(STORY.content.map(s => (<>
-        <div className='mt-50'>
+        <div className='mt-100'>
           <Image className='intext-image' src={s.image} />
         </div>
         <p className="subhead mt-20" style={{ maxWidth: '60%' }}>{s.text}</p>
@@ -39,7 +39,7 @@ const Story = () => {
   return (
 
     <div ref={nodeRef} className='pd-60 mt-50 hero-2 hero'>
-      <h2>{STORY.heading}</h2>
+      <h2 className='mt-30'>{STORY.heading}</h2>
         {story}
         {!expand && <Button className='mt-50' onClick={toggleExpand}>KEEP READING</Button>}
         {isVisible && expand && <Button className='stick-bottom' variant='danger' onClick={toggleExpand}>X</Button>}
