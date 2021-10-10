@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
+import Footer from './root/Footer';
 import Header from './root/Header';
 import Web3Wrapper from './web3/wrapper/Web3Wrapper'
 
@@ -35,7 +36,7 @@ function App() {
           </Route> */}
 
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
         </Web3Wrapper>
       </Router>
     </div>

@@ -4,7 +4,7 @@ import { VIEWITEMS } from '../data/General';
 
 const ViewOnMarket = () => {
   return (
-    <div className='pd-20 hero-3 hero'>
+    <div className='pd-20 hero-3 hero' id='market'>
       <div className='content-wrapper'>
         <div className='card pd-20'>
           <div>

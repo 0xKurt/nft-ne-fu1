@@ -1,5 +1,6 @@
 import React from 'react';
 import SetAirdrop from '../components/SetAirdrop';
+import FAQ from '../heros/FAQ';
 import Roadmap from '../heros/Roadmap';
 import Story from '../heros/Story';
 import Team from '../heros/Team';
@@ -14,6 +15,7 @@ const Home = () => {
       <ViewOnMarket />
       <Team />
       <Roadmap />
+      <FAQ />
       {/* <SetAirdrop /> */}
     </div>
   );

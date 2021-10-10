@@ -23,7 +23,7 @@ const Team = () => {
   },[])
 
   return (
-    <div className='pd-20 hero-4 hero' style={{minHeight: '100px'}}>
+    <div className='pd-20 hero-4 hero' style={{minHeight: '100px'}} id='team'>
       <div className='pd-60'>
         <div><h1>{TEAM.heading}</h1></div>
         <Row className='mt-50'>

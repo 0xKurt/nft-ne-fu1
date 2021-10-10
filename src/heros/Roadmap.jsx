@@ -5,11 +5,17 @@ import { ROADMAP } from '../data/General';
 const Roadmap = () => {
   const [content, setContent] = useState('');
   const [cards, setCards] = useState('')
+  const [width, setWidth] = useState(window.innerWidth)
 
+  const updateWindowDimensions = () => {
+    setWidth(window.innerWidth)
+  }
   useEffect(() => {
+    console.log('width: '+width)
+    window.addEventListener('resize', updateWindowDimensions);
     setContent(
       ROADMAP.roadmap.map((r, index) => (
-        index % 2 == 0 ?
+        index % 2 == 0 || width < 800?
           <Row className='mt-50' style={{ maxWidth: '70%' }}>
             <Col style={{ textAlign: 'right' }} > <img src={r.img} alt={r.heading} style={{ maxWidth: '180px' }} /></Col>
             <Col style={{ textAlign: 'left' }}>
@@ -59,10 +65,10 @@ const Roadmap = () => {
     )
 
     console.log('roadmap')
-  }, [])
+  }, [width])
 
   return (
-    <div className='pd-20 hero-5 hero' style={{ minHeight: '100px' }}>
+    <div className='pd-20 hero-5 hero' style={{ minHeight: '100px' }} id='roadmap'>
       <div className='pd-60' style={{ justifyContent: 'center' }}>
         <div><h1>{ROADMAP.heading}</h1></div>
         <div className='mt-60 center'>
