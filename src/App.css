@@ -153,6 +153,7 @@
 .subhead {
   hyphens: auto; 
 	text-align: justify !important;
+  font-size: 22px;
 }
 .stick-bottom {
   bottom: 20px;
