@@ -113,7 +113,7 @@
 
 .show {
   text-shadow: 1px 1px 3px var(--bg1);
-  margin-top: 7px;
+  margin-top: 22px;
   backdrop-filter: blur(15px);
 }
 
@@ -204,6 +204,11 @@
 .mr-25 {
   margin-right: 25px;
 }
+
+.mr-50 {
+  margin-right: 50px;
+}
+
 
 .mb-25 {
   margin-bottom: 25px;

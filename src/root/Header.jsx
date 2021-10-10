@@ -9,12 +9,12 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" variant="light" fixed="top" className='navbar'>
       <Navbar.Brand as={Link} to="/">
-        <img src={LOGO} alt={WEBSITE_NAME} className="header-logo-image ml-30" />
+        <img src={LOGO} alt={WEBSITE_NAME} className="mr-50 header-logo-image ml-30" />
         {/* {WEBSITE_NAME} */}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent: 'center', width: '100%'}}>
-        <Nav className="mr-auto nav-bg" style={{justifyContent: 'space-between', width: '50%'}}>
+        <Nav className="mr-auto nav-bg" style={{justifyContent: 'space-between', width: '100%', maxWidth: '900px'}}>
           {MENU_LINKS.map(ml => (
             <Nav.Link href='#' as={Link} to={ml.to}><h5>{ml.name}</h5></Nav.Link>
           ))}
