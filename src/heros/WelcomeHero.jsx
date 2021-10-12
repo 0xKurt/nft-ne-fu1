@@ -1,10 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Mint from '../components/Mint';
-import { CLICKMINT } from '../data/General';
+import { CLICKMINT, WELCOME } from '../data/General';
 import Image from 'react-bootstrap/Image';
 
 const WelcomeHero = () => {
+
   return (
     <div className='hero hero-1' id='welcome'>
       <div className='content-wrapper mt-20'>
@@ -17,6 +18,7 @@ const WelcomeHero = () => {
           </Row>
         </Row>
       </div>
+      <div className='background-image1'></div>
     </div>
   );
 }

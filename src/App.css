@@ -23,7 +23,16 @@
 
 .hero-1 {
   color: var(--fcol1);
-  background-color: var(--bg1) !important;
+  background-color: var(--bg1);
+}
+.background-image1 {
+  background-image: url('./data/img/background1.png');
+  background-repeat: no-repeat;
+	background-size: contain;
+	height: calc(100vh + 7px);
+  width: 100vw !important;
+  background-position: bottom left;
+  bottom: 0;
 }
 
 .hero-2 {
@@ -286,4 +295,8 @@
 
 .bold {
   font-weight: bolder;
+}
+
+.reverse {
+  animation-direction: reverse !important;
 }

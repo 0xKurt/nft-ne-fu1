@@ -1,5 +1,5 @@
+// import images
 import logo from './img/logo.png'
-import headerBg from './img/header-bg.png'
 import clickMint from './img/click-mint.png'
 import story1 from './img/story1.png'
 import person1 from './img/person1.jpg'
@@ -7,12 +7,21 @@ import x000 from './img/x000.png'
 import roadmapcard1 from './img/roadmapcard1.png'
 import faq from './img/faq.png'
 
+import mar1 from './img/marquee/mar1.png'
+import mar2 from './img/marquee/mar2.png'
+import mar3 from './img/marquee/mar3.png'
+import mar4 from './img/marquee/mar4.png'
+import mar5 from './img/marquee/mar5.png'
+import mar6 from './img/marquee/mar6.png'
+import mar7 from './img/marquee/mar7.png'
+import mar8 from './img/marquee/mar8.png'
+
+
 // general
 export const WEBSITE_NAME = "Cool NFT"
 
 // images
 export const LOGO = logo;
-export const HEADERBG = headerBg;
 export const CLICKMINT = clickMint;
 
 // links navbar
@@ -24,7 +33,6 @@ export const MENU_LINKS = [
   { name: 'Roadmap', to: '#roadmap' },
   { name: 'FAQ', to: '#faq' },
 ];
-
 
 // story
 export const STORY = {
@@ -54,7 +62,10 @@ export const VIEWITEMS = {
   heading: 'VIEW THE ITEMS',
   text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
   buttonText: 'VIEW ON OPENSEA',
-  link: 'http://www.google.de'
+  link: 'http://www.google.de',
+  imgs: [
+    mar1, mar2, mar3, mar4, mar5, mar6, mar7, mar8
+  ]
 }
 
 export const TEAM = {

@@ -38,7 +38,7 @@ const Story = () => {
 
   return (
 
-    <div ref={nodeRef} className='pd-60 mt-50 hero-2 hero' id='story'>
+    <div ref={nodeRef} className='pd-60 hero-2 hero' id='story'>
       <h2 className='mt-30'>{STORY.heading}</h2>
         {story}
         {!expand && <Button className='mt-50' onClick={toggleExpand}>KEEP READING</Button>}
