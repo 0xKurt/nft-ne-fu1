@@ -94,13 +94,13 @@ const useWeb3Modal = () => {
           _account = _accounts[0];
           setAccount(_account)
         } else {
-          alert("Error 1002: No accounts found.");
+         // alert("Error 1002: No accounts found.");
         }
       });
 
     } catch (err) {
       console.log(err)
-      alert("Error 1001: Could not connect to web3 provider.");
+     // alert("Error 1001: Could not connect to web3 provider.");
     }
     // trigger();
     return;

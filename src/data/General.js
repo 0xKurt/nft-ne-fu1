@@ -1,10 +1,16 @@
 // import images
 import logo from './img/logo.png'
 import clickMint from './img/click-mint.png'
+
 import story1 from './img/story1.png'
+import story2 from './img/story2.png'
+
 import person1 from './img/person1.jpg'
+
 import x000 from './img/x000.png'
+
 import roadmapcard1 from './img/roadmapcard1.png'
+
 import faq from './img/faq.png'
 
 import mar1 from './img/marquee/mar1.png'
@@ -15,6 +21,19 @@ import mar5 from './img/marquee/mar5.png'
 import mar6 from './img/marquee/mar6.png'
 import mar7 from './img/marquee/mar7.png'
 import mar8 from './img/marquee/mar8.png'
+import mar9 from './img/marquee/mar9.png'
+import mar10 from './img/marquee/mar10.png'
+import mar11 from './img/marquee/mar11.png'
+import mar12 from './img/marquee/mar12.png'
+import mar13 from './img/marquee/mar13.png'
+import mar14 from './img/marquee/mar14.png'
+import mar15 from './img/marquee/mar15.png'
+import mar16 from './img/marquee/mar16.png'
+import mar17 from './img/marquee/mar17.png'
+import mar18 from './img/marquee/mar18.png'
+import mar19 from './img/marquee/mar19.png'
+import mar20 from './img/marquee/mar20.png'
+
 
 
 // general
@@ -37,21 +56,26 @@ export const MENU_LINKS = [
 // story
 export const STORY = {
   heading: 'STORY TIME',
+  font: 'Poor Story', // fonts: https://fonts.google.com/
   content: [
     {
       image: story1,
+      imgDirection: 'top', // top, left, right
       text: 'HALLO Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
     },
     {
-      image: story1,
+      image: story2,
+      imgDirection: 'left', // top, left, right
       text: ' Second Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
     },
     {
-      image: story1,
+      image: story2,
+      imgDirection: 'right', // top, left, right
       text: 'Third Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
     },
     {
       image: story1,
+      imgDirection: 'top', // top, left, right
       text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
     },
 
@@ -64,7 +88,7 @@ export const VIEWITEMS = {
   buttonText: 'VIEW ON OPENSEA',
   link: 'http://www.google.de',
   imgs: [
-    mar1, mar2, mar3, mar4, mar5, mar6, mar7, mar8
+    mar1, mar2, mar3, mar4, mar5, mar6, mar7, mar8, mar9, mar10, mar11, mar12, mar13, mar14, mar15, mar16, mar17, mar18, mar19, mar20
   ]
 }
 
