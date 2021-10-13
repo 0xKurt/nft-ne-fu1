@@ -5,13 +5,24 @@ import Image from 'react-bootstrap/Image';
 import { useIsVisible } from 'react-is-visible'
 import GoogleFontLoader from 'react-google-font-loader';
 
+
 const Story = () => {
   const nodeRef = useRef()
   const isVisible = useIsVisible(nodeRef)
 
   const [story, setStory] = useState('');
   const [expand, setExpand] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth)
 
+  const updateWindowDimensions = () => {
+    setWidth(window.innerWidth)
+    console.log(window.innerWidth)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWindowDimensions);
+  },[])
+  
   useEffect(() => {
     if (!expand && STORY.content.length > 2) {
       setStory(showEntries(2))
@@ -19,14 +30,14 @@ const Story = () => {
       setStory(showEntries(STORY.content.length))
     }
     console.log('story')
-  }, [expand])
+  }, [expand, width])
 
 
   const showEntries = (max) => {
     let cutStory = STORY.content.slice(0, max);
     return (
       cutStory.map(s => (<>
-        {s.imgDirection == 'left' && <>
+        {s.imgDirection == 'left' && width > 900 && <>
           <Row className='mt-100' style={{ justifyContent: 'center', maxWidth: '60%', minWidth: '300px' }}>
             <Col className='' style={{ maxWidth: 'fit-content', justifyContent: 'center' }}>
               <Image className='mt-50' src={s.image} style={{ minHeight: '15vw' }} />
@@ -36,17 +47,17 @@ const Story = () => {
             </Col>
           </Row>
         </>}
-        {s.imgDirection == 'right' && <>
+        {s.imgDirection == 'right' && width > 900 && <>
           <Row className='mt-100' style={{ justifyContent: 'center', maxWidth: '60%', minWidth: '300px' }}>
             <Col style={{ maxWidth: '55vw', textAlign: ''}}>
               <p className="subhead mt-20" style={{ maxWidth: '60%', minWidth: '300px' }}>{s.text}</p>
             </Col>
             <Col className='' style={{ maxWidth: 'fit-content', justifyContent: 'center' }}>
-              <Image className='mt-50' src={s.image} style={{ minHeight: '15vw'}} />
+              <Image className='mt-50' src={s.image} style={{ height: '15vw'}} />
             </Col>
           </Row>
         </>}
-        {s.imgDirection != 'left' && s.imgDirection != 'right' && <>
+        {(width < 901 || s.imgDirection != 'left' && s.imgDirection != 'right') && <>
           <div className='mt-100'>
             <Image className='intext-image' src={s.image} />
           </div>
