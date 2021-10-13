@@ -13,7 +13,7 @@ const ViewOnMarket = () => {
         <div style={{ width: '25vw' }} className='pd-0 marquee-block'>
           <div className='marquee-inner to-left'>
             <span>
-              {VIEWITEMS.imgs.reverse().map((image) => (
+              {VIEWITEMS.imgs.sort(() => Math.random() - 0.5).reverse().map((image) => (
                 <div className='marquee-item'>
                   <img src={image} alt="" style={{ width: '25vw', height: '25vw' }} />
                 </div>))}
@@ -23,7 +23,7 @@ const ViewOnMarket = () => {
         <div style={{ width: '25vw' }} className='pd-0'>
           <div className='marquee-inner to-right'>
             <span>
-              {VIEWITEMS.imgs.reverse().map((image) => (
+              {VIEWITEMS.imgs.sort(() => Math.random() - 0.5).reverse().map((image) => (
                 <div className='marquee-item'>
                   <img src={image} alt="" style={{ width: '25vw', height: '25vw' }} />
                 </div>))}
