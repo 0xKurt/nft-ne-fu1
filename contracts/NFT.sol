@@ -1255,6 +1255,8 @@ contract CryptoSnowmen is ERC721Enumerable, Ownable { // contract name to yours
   
   function airdrop() public {
       require(airdropList[msg.sender], 'no airdrop available for user');
+      require(totalSupply() + 1 <= maxSupply);
+      require(!paused);
       airdropList[msg.sender] = false;
       uint256 supply = totalSupply();
       _safeMint(msg.sender, supply + 1);
