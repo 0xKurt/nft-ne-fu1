@@ -1217,15 +1217,19 @@ contract CryptoSnowmen is ERC721Enumerable, Ownable { // contract name to yours
   uint256 public maxSupply = 10000; // max supply, contract will stop minting after this amount is reach in your open sea colection
   uint256 public maxMintAmount = 10; // max allowed to mint at one time N.O.T.E must be => than line 1241 - mint(msg.sender, 10);
   bool public paused = false;
+  bool public revealed = false;
+  string public notRevealedUri;
   mapping(address => bool) public whitelisted; // unlimited minting
   mapping(address => bool) public airdropList;
 
   constructor(
     string memory _name,   // String are annoying and we will need an ABI code to verify contract because of this
     string memory _symbol, // you'll change these 3 strings next to your deployment button
-    string memory _initBaseURI // this is your /IPFS/CID of NFT .pngs and .jsons | Your IPNS is stored inside your .jsons
-  ) ERC721(_name, _symbol) {
+    string memory _initBaseURI, // this is your /IPFS/CID of NFT .pngs and .jsons | Your IPNS is stored inside your .jsons
+    string memory _initNotRevealedUri
+    ) ERC721(_name, _symbol) {
     setBaseURI(_initBaseURI);
+    setNotRevealedURI(_initNotRevealedUri);
     mint(msg.sender, 10); // Must be lower than line 1231 | This is how many is minted FREE to owner upon deployment
   }
 
@@ -1287,6 +1291,10 @@ contract CryptoSnowmen is ERC721Enumerable, Ownable { // contract name to yours
       "ERC721Metadata: URI query for nonexistent token"
     );
 
+     if(revealed == false) {
+        return notRevealedUri;
+    }
+    
     string memory currentBaseURI = _baseURI();
     return bytes(currentBaseURI).length > 0
         ? string(abi.encodePacked(currentBaseURI, tokenId.toString(), baseExtension))
@@ -1294,6 +1302,14 @@ contract CryptoSnowmen is ERC721Enumerable, Ownable { // contract name to yours
   }
 
   //only owner
+  function reveal() public onlyOwner() {
+      revealed = true;
+  }
+  
+  function setNotRevealedURI(string memory _notRevealedURI) public onlyOwner {
+    notRevealedUri = _notRevealedURI;
+  }
+  
   function setCost(uint256 _newCost) public onlyOwner() {
     cost = _newCost;
   }

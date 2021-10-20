@@ -362,11 +362,11 @@
 	},
 	"sources": {
 		"nft-ne-fu1/contracts/NFT.sol": {
-			"keccak256": "0xc81ad5c7e574200b71fd3cdb8ceac7035d87431822942a8450958d87d3843ecb",
+			"keccak256": "0x4ef8758454ecd6dba22ed3872e4f37aa965cd8b325a0ef35ac54d3af8f4ea7b2",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7388667a3e14366020b2fa31bc9c3aa6efb785126ff58f820b6834ca145ebd71",
-				"dweb:/ipfs/QmdG3MExcSvj2rMiReEy12rV7jmwRtPbjnQuw14xtKnov2"
+				"bzz-raw://5b03e4f1ca8014ccc4c28e33841a71b2678960f0a6ae16fff9d8292ccd0a44e3",
+				"dweb:/ipfs/QmdS6TFGrAY7mwRxXXNu3L2Ux7vtrQGU2Qdx1dVHbHLnwv"
 			]
 		}
 	},
