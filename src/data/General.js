@@ -1,9 +1,15 @@
 // import images
 import logo from './img/logo.png'
 import clickMint from './img/click-mint.png'
+import roadmapimg from './img/raodmap-FF.jpg'
 
-import story1 from './img/story1.png'
-import story2 from './img/story2.png'
+import story1 from './img/story-boarding-designs-FF-01.png'
+import story2 from './img/story-boarding-designs-FF-02.png'
+import story3 from './img/story-boarding-designs-FF-03.png'
+import story4 from './img/story-boarding-designs-FF-04.png'
+import story5 from './img/story-boarding-designs-FF-05.png'
+import story6 from './img/story-boarding-designs-FF-06.png'
+import story7 from './img/story-boarding-designs-FF-07.png'
 
 import person1 from './img/person1.jpg'
 
@@ -69,12 +75,27 @@ export const STORY = {
       text: ' Second Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
     },
     {
-      image: story2,
+      image: story3,
       imgDirection: 'right', // top, left, right
       text: 'Third Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
     },
     {
-      image: story1,
+      image: story4,
+      imgDirection: 'left', // top, left, right
+      text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+    },
+    {
+      image: story5,
+      imgDirection: 'top', // top, left, right
+      text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+    },
+    {
+      image: story6,
+      imgDirection: 'top', // top, left, right
+      text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+    },
+    {
+      image: story7,
       imgDirection: 'top', // top, left, right
       text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
     },
@@ -120,7 +141,8 @@ export const TEAM = {
 
 export const ROADMAP = {
   heading: '...our beautiful roadmap',
-  roadmap: [
+  image: roadmapimg,
+  roadmap: [ // deleted in forntend
     {
       img: x000,
       heading: '2000 NFTs',

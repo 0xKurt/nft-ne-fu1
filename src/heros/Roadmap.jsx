@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Image, Row } from 'react-bootstrap';
 import { ROADMAP } from '../data/General';
 
 const Roadmap = () => {
@@ -11,11 +11,11 @@ const Roadmap = () => {
     setWidth(window.innerWidth)
   }
   useEffect(() => {
-    console.log('width: '+width)
+    console.log('width: ' + width)
     window.addEventListener('resize', updateWindowDimensions);
     setContent(
       ROADMAP.roadmap.map((r, index) => (
-        index % 2 == 0 || width < 800?
+        index % 2 == 0 || width < 800 ?
           <Row className='mt-50' style={{ maxWidth: '70%' }}>
             <Col style={{ textAlign: 'right' }} > <img src={r.img} alt={r.heading} style={{ maxWidth: '180px' }} /></Col>
             <Col style={{ textAlign: 'left' }}>
@@ -23,7 +23,7 @@ const Roadmap = () => {
                 <h3 className='mt-20'>{r.heading}</h3>
               </Row>
               <Row>
-                <div className='' style={{opacity: '0.8'}}>
+                <div className='' style={{ opacity: '0.8' }}>
                   {r.desc}
                 </div>
               </Row>
@@ -36,7 +36,7 @@ const Roadmap = () => {
                 <h3 className='mt-20'>{r.heading}</h3>
               </Row>
               <Row>
-                <div className='' style={{opacity: '0.8'}}>
+                <div className='' style={{ opacity: '0.8' }}>
                   {r.desc}
                 </div>
               </Row>
@@ -50,15 +50,15 @@ const Roadmap = () => {
       ROADMAP.cards.map(c => (
         <div className='pd-20'>
           <div className='small-card pd-20'>
-          <div>
-          <img src={c.img} alt={c.heading} style={{ maxWidth: '40px' }} />
-          </div>
-          <div className='mt-20 bold'>
-            <h5>{c.heading}</h5>
-          </div>
-          <div className='mt-20' style={{opacity: '0.8'}}>
-            {c.desc}
-          </div>
+            <div>
+              <img src={c.img} alt={c.heading} style={{ maxWidth: '40px' }} />
+            </div>
+            <div className='mt-20 bold'>
+              <h5>{c.heading}</h5>
+            </div>
+            <div className='mt-20' style={{ opacity: '0.8' }}>
+              {c.desc}
+            </div>
           </div>
         </div>
       ))
@@ -71,12 +71,17 @@ const Roadmap = () => {
     <div className='pd-20 hero-5 hero' style={{ minHeight: '100px' }} id='roadmap'>
       <div className='pd-60' style={{ justifyContent: 'center' }}>
         <div><h1>{ROADMAP.heading}</h1></div>
-        <div className='mt-60 center'>
+        {/* <div className='mt-60 center'>
           <center>
             {content}
           </center>
-        </div>
-        <Row className='mt-100' style={{justifyContent: 'center', display: 'flex'}}>
+        </div> */}
+        <Row className='mt-50' >
+          <Col>
+          <Image src={ROADMAP.image} className='' style={{maxWidth: '100vw'}}/>
+          </Col>
+        </Row>
+        <Row className='mt-100' style={{ justifyContent: 'center', display: 'flex' }}>
           {cards}
         </Row>
       </div>

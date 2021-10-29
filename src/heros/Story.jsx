@@ -38,19 +38,19 @@ const Story = () => {
     return (
       cutStory.map(s => (<>
         {s.imgDirection == 'left' && width > 900 && <>
-          <Row className='mt-100' style={{ justifyContent: 'center', maxWidth: '60%', minWidth: '300px' }}>
+          <Row className='mt-100' style={{ justifyContent: 'center', maxWidth: '70%', minWidth: '300px' }}>
             <Col className='' style={{ maxWidth: 'fit-content', justifyContent: 'center' }}>
-              <Image className='mt-50' src={s.image} style={{ minHeight: '15vw' }} />
+              <Image className='mt-50' src={s.image} style={{ height: '15vw' }} />
             </Col>
             <Col style={{ maxWidth: '55vw', textAlign: '' }}>
-              <p className="subhead mt-20" style={{ maxWidth: '60%', minWidth: '300px' }}>{s.text}</p>
+              <p className="subhead mt-20" style={{ maxWidth: '70%', minWidth: '300px' }}>{s.text}</p>
             </Col>
           </Row>
         </>}
         {s.imgDirection == 'right' && width > 900 && <>
-          <Row className='mt-100' style={{ justifyContent: 'center', maxWidth: '60%', minWidth: '300px' }}>
+          <Row className='mt-100 pd-0' style={{ justifyContent: 'center', maxWidth: '70%', minWidth: '300px' }}>
             <Col style={{ maxWidth: '55vw', textAlign: ''}}>
-              <p className="subhead mt-20" style={{ maxWidth: '60%', minWidth: '300px' }}>{s.text}</p>
+              <p className="subhead mt-20" style={{ maxWidth: '70%', minWidth: '300px' }}>{s.text}</p>
             </Col>
             <Col className='' style={{ maxWidth: 'fit-content', justifyContent: 'center' }}>
               <Image className='mt-50' src={s.image} style={{ height: '15vw'}} />
@@ -58,10 +58,10 @@ const Story = () => {
           </Row>
         </>}
         {(width < 901 || s.imgDirection != 'left' && s.imgDirection != 'right') && <>
-          <div className='mt-100'>
-            <Image className='intext-image' src={s.image} />
+          <div className='mt-100 pd-0'>
+            <Image className='' src={s.image} style={{ height: '15vw', minHeight: '250px'}}/>
           </div>
-          <p className="subhead mt-20" style={{ maxWidth: '60%', minWidth: '300px' }}>{s.text}</p>
+          <p className="subhead mt-20" style={{ maxWidth: '60%'}}>{s.text}</p>
         </>}
 
       </>))

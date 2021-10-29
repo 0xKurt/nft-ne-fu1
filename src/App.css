@@ -11,7 +11,7 @@
   --bg4: rgb(177, 106, 0);
   --fcol4: rgb(255, 255, 255);
 
-  --bg5: rgb(67, 14, 92);
+  --bg5: rgba(0, 171, 239, 255);
   --fcol5: rgb(255, 255, 255);
 
   --bg6: rgb(26, 163, 133);
@@ -23,10 +23,10 @@
 
 .hero-1 {
   color: var(--fcol1);
-  background-color: var(--bg1);
+  background-image: linear-gradient(to right, #5ec6fc , #492c86);
 }
 .background-image1 {
-  background-image: url("./data/img/background1.png");
+  background-image: url("./data/img/header-banner-website-FF.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   height: calc(100vh + 7px);
@@ -134,7 +134,6 @@
   align-items: center;
   min-height: calc(100vh + 7px);
   position: relative;
-  background: var(--bg1);
   overflow: hidden;
   vertical-align: middle;
 }
