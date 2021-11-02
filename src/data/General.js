@@ -19,26 +19,26 @@ import roadmapcard1 from './img/roadmapcard1.png'
 
 import faq from './img/faq.png'
 
-import mar1 from './img/marquee/mar1.png'
-import mar2 from './img/marquee/mar2.png'
-import mar3 from './img/marquee/mar3.png'
-import mar4 from './img/marquee/mar4.png'
-import mar5 from './img/marquee/mar5.png'
-import mar6 from './img/marquee/mar6.png'
-import mar7 from './img/marquee/mar7.png'
-import mar8 from './img/marquee/mar8.png'
-import mar9 from './img/marquee/mar9.png'
-import mar10 from './img/marquee/mar10.png'
-import mar11 from './img/marquee/mar11.png'
-import mar12 from './img/marquee/mar12.png'
-import mar13 from './img/marquee/mar13.png'
-import mar14 from './img/marquee/mar14.png'
-import mar15 from './img/marquee/mar15.png'
-import mar16 from './img/marquee/mar16.png'
-import mar17 from './img/marquee/mar17.png'
-import mar18 from './img/marquee/mar18.png'
-import mar19 from './img/marquee/mar19.png'
-import mar20 from './img/marquee/mar20.png'
+import mar1 from './img/marquee/01.png'
+import mar2 from './img/marquee/02.png'
+import mar3 from './img/marquee/03.png'
+import mar4 from './img/marquee/04.jpg'
+import mar5 from './img/marquee/05.jpg'
+import mar6 from './img/marquee/06.jpg'
+import mar7 from './img/marquee/07.jpg'
+import mar8 from './img/marquee/08.jpg'
+import mar9 from './img/marquee/09.jpg'
+import mar10 from './img/marquee/10.jpg'
+import mar11 from './img/marquee/11.jpg'
+import mar12 from './img/marquee/12.jpg'
+import mar13 from './img/marquee/13.jpg'
+import mar14 from './img/marquee/14.jpg'
+import mar15 from './img/marquee/15.jpg'
+import mar16 from './img/marquee/16.jpg'
+import mar17 from './img/marquee/17.jpg'
+import mar18 from './img/marquee/18.jpg'
+import mar19 from './img/marquee/19.jpg'
+import mar20 from './img/marquee/20.jpg'
 
 
 
@@ -62,42 +62,42 @@ export const MENU_LINKS = [
 // story
 export const STORY = {
   heading: 'STORY TIME',
-  font: 'Poor Story', // fonts: https://fonts.google.com/
+  font: 'Irish Grover', // fonts: https://fonts.google.com/
   content: [
     {
       image: story1,
       imgDirection: 'top', // top, left, right
-      text: 'HALLO Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+      text: 'Crypto Snowmen have always been mythical creatures hiding in the snow and only come out when there’s is large snowfall. All these years people never knew the snowmen were actually real and move around. They protect the children in the city from the evil snowmen each winter by guarding their house from the backyard or front yard. '
     },
     {
       image: story2,
       imgDirection: 'left', // top, left, right
-      text: ' Second Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+      text: 'Year after year after the winter just before spring the snowmen migrate to the north pole and the south pole to stay cold during the summer months. King Snow Carrot-nose has declared a emergency because of global warming thanks to the humans. He said \“The winters have become shorter with less cold days for snowmen to stay safe, We must move to the north pole and stay there\”'
     },
     {
       image: story3,
       imgDirection: 'right', // top, left, right
-      text: 'Third Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+      text: 'The Queen Snowlady Alazka has asked the King \“what about our enemies the Evil Snowmen from the South Pole and their minions?\“'
     },
     {
       image: story4,
       imgDirection: 'left', // top, left, right
-      text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+      text: 'The King replied \“We will just have to fortify our kingdom in the north and prepare for a battle!\”  The Snowmen from the North call it Snowman Land where they can roam freely without hiding away from kids. The reason they come back down every summer is to help protect kids from the evil snowmen who want to attack during the winter stormy nights. '
     },
     {
       image: story5,
       imgDirection: 'top', // top, left, right
-      text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+      text: 'Snow Broomstick said to the King, “We will need to bring our weapons, armor , and whatever belongings we can carry with us while we migrate because we may not be coming back. '
     },
     {
       image: story6,
       imgDirection: 'top', // top, left, right
-      text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+      text: 'The Evil snowman Devil found out about their plans and wants to race them to the north pole as the weather is too warm for them to go back to the south pole. They could melt or worst evaporate!!! So the King and his people plan to rush to the North pole to beat the Evil snowmen from getting there first,  and taking all there clothes and snowballs with them.  Help rescue the snowmen so they can get to the North pole and have a fighting chance against the south pole snowmen.'
     },
     {
       image: story7,
       imgDirection: 'top', // top, left, right
-      text: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy '
+      text: 'So the King and his people plan to rush to the North pole to beat the Evil snowmen from getting there first,  and taking all there clothes and snowballs with them.  Help rescue the snowmen so they can get to the North pole and have a fighting chance against the south pole snowmen.'
     },
 
   ]
@@ -117,25 +117,31 @@ export const TEAM = {
   heading: 'TEAM',
   team: [
     {
-      name: 'KING KARL',
-      desc: 'The King',
-      img: person1
+      name: 'NEFU',
+      desc: 'Dev / Digital Marketing',
+      img: mar3
     },
     {
-      name: 'KING KARL',
-      desc: 'The King',
-      img: person1
+      name: 'BARBARA',
+      desc: 'Artist',
+      img: mar13
     },
     {
-      name: 'KING KARL',
-      desc: 'The King',
-      img: person1
+      name: 'KURT',
+      desc: 'Developer',
+      img: mar15
     },
     {
-      name: 'KING KARL',
-      desc: 'The King',
-      img: person1
+      name: 'DODI',
+      desc: 'Discord Community Leader',
+      img: mar7
     },
+    {
+      name: 'LUMBERJACK',
+      desc: 'Discord Lead Admin',
+      img: mar17
+    },
+    
   ]
 }
 

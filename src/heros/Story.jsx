@@ -84,7 +84,7 @@ const Story = () => {
           },
         ]}
       />
-      <h2 className='mt-30'>{STORY.heading}</h2>
+      <h2 className='mt-30' style={{fontFamily: STORY.font}}>{STORY.heading}</h2>
       <div className='' style={{ alignItems: 'center', fontFamily: STORY.font, maxWidth: '90vw' }}>
         <center>
           {story}
