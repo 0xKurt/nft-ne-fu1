@@ -40,7 +40,7 @@ const Story = () => {
         {s.imgDirection == 'left' && width > 900 && <>
           <Row className='mt-100' style={{ justifyContent: 'center', maxWidth: '70%', minWidth: '300px' }}>
             <Col className='' style={{ maxWidth: 'fit-content', justifyContent: 'center' }}>
-              <Image className='mt-50' src={s.image} style={{ height: '15vw' }} />
+              <Image className='mt-50' src={s.image} style={{ height: '15vw', maxWidth: '90vw' }} />
             </Col>
             <Col style={{ maxWidth: '55vw', textAlign: '' }}>
               <p className="subhead mt-20" style={{ maxWidth: '70%', minWidth: '300px' }}>{s.text}</p>

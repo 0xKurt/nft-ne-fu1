@@ -2,22 +2,22 @@
   --bg1: rgb(159, 188, 238); /* background color header */
   --fcol1: white; /* font color header */
 
-  --bg2: rgb(184, 154, 138);
+  --bg2: #5eb0d4ff;
   --fcol2: white;
 
   --bg3: rgb(97, 110, 49);
   --fcol3: rgb(56, 56, 56);
 
-  --bg4: rgb(177, 106, 0);
+  --bg4: #291b87ff;
   --fcol4: rgb(255, 255, 255);
 
   --bg5: rgba(0, 171, 239, 255);
   --fcol5: rgb(255, 255, 255);
 
-  --bg6: rgb(26, 163, 133);
-  --fcol6: rgb(255, 255, 255);
+  --bg6: white;
+  --fcol6: rgba(0, 171, 239, 255);
 
-  --bg7: rgb(142, 153, 43);
+  --bg7: #5eb0d4ff;
   --fcol7: rgb(255, 255, 255);
 }
 
@@ -28,7 +28,7 @@
 .background-image1 {
   background-image: url("./data/img/header-banner-website-FF.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size:cover;
   height: calc(100vh + 7px);
   width: 100vw !important;
   background-position: bottom left;
@@ -79,6 +79,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
   width: 50vh;
+  max-width: 90%;
   min-height: 20vh;
   border-radius: 25px;
   background-color: white !important;
@@ -165,7 +166,7 @@
 }
 
 .underline {
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 171, 239, 255);
   opacity: 0.5;
 }
 

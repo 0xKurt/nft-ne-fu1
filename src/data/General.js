@@ -173,18 +173,18 @@ export const ROADMAP = {
   cards: [
     {
       img: roadmapcard1,
-      heading: 'OMG !',
-      desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+      heading: '2000',
+      desc: 'First 2000 to Mint get Airdrop of Exotic Metaverse Token.'
     },
     {
       img: roadmapcard1,
-      heading: 'YEAH !!!',
-      desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+      heading: 'Prizes',
+      desc: 'If you Win any Prizes we may send you the Cash equivalent value of the prize in ethereum.'
     },
     {
       img: roadmapcard1,
-      heading: 'Hello there',
-      desc: 'Last Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+      heading: 'Wallet',
+      desc: 'Community Wallet will be created to buy the floor using 5% of sales.'
     },
 
   ]
@@ -235,36 +235,36 @@ export const FOOTER = {
   ],
   socialmedia: {
     telegram: {
-      show: true,
+      show: false,
       link: 'http://www.google.de'
     },
     twitter: {
       show: true,
-      link: 'http://www.google.de'
+      link: 'https://twitter.com/cryptosnowmen'
     },
     discord: {
       show: true,
-      link: 'http://www.google.de'
+      link: 'https://discord.gg/cryptosnowmen'
     },
     youtube: {
-      show: true,
+      show: false,
       link: 'http://www.google.de'
     },
     tiktok: {
-      show: true,
+      show: false,
       link: 'http://www.google.de'
     },
     github: {
-      show: true,
+      show: false,
       link: 'http://www.google.de'
     },
     reddit: {
-      show: true,
+      show: false,
       link: 'http://www.google.de'
     },
     medium: {
       show: true,
-      link: 'http://www.google.de'
+      link: 'https://exoticmetaverse.medium.com/cryptosnowman-story-75255271e817'
     },
 
 

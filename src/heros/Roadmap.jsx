@@ -47,8 +47,8 @@ const Roadmap = () => {
     )
 
     setCards(
-      ROADMAP.cards.map(c => (
-        <div className='pd-20'>
+      ROADMAP.cards.map(c => (<Col>
+        <Row className='pd-20'  style={{ justifyContent: 'center' }}>
           <div className='small-card pd-20'>
             <div>
               <img src={c.img} alt={c.heading} style={{ maxWidth: '40px' }} />
@@ -60,7 +60,7 @@ const Roadmap = () => {
               {c.desc}
             </div>
           </div>
-        </div>
+        </Row></Col>
       ))
     )
 
