@@ -25,15 +25,35 @@
   color: var(--fcol1);
   background-image: linear-gradient(to right, #5ec6fc , #492c86);
 }
-.background-image1 {
-  background-image: url("./data/img/header-banner-website-FF.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: calc(100vh + 7px);
-  width: 100vw !important;
-  background-position: bottom left;
-  bottom: 0;
+
+
+@media (max-width: 850px) {
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .background-image1 {
+    background-image: url("./data/img/header-banner-website-FF-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: calc(100vh + 7px);
+    width: 100vw !important;
+    background-position: bottom left;
+    bottom: 0;
+  }
 }
+
+
+@media (min-width: 851px) {
+  
+  .background-image1 {
+    background-image: url("./data/img/header-banner-website-FF.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: calc(100vh + 7px);
+    width: 100vw !important;
+    background-position: bottom left;
+    bottom: 0;
+  }
+}
+
 
 .hero-2 {
   color: var(--fcol2);

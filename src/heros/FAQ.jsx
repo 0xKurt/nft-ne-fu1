@@ -39,10 +39,10 @@ const FAQ = () => {
           {showImg && <Col className='' style={{ maxWidth: 'fit-content', minWidth: '400px' }}>
             <img src={FAQS.img} alt={FAQS.heading} style={{ maxHeight: '90vh', textAlign: 'left' }} />
           </Col>}
-          <Col className='ml-50' style={{ textAlign: 'left', width: '80vw', minWidth: '350px', maxWidth: '900px' }}>
+          <Col className='ml-50' style={{ textAlign: 'left', width: '90vw', minWidth: '350px', maxWidth: '900px' }}>
             {FAQS.content.map((faq, index) => (
-              <div className='ml-20 pointer' style={{ width: '80%' }}>
-                <Row className='mt-20' onClick={() => { open(index) }}>
+              <div className='ml-20 pointer' style={{ width: '90%' }}>
+                <Row className='mt-20' onClick={() => { open(index) }} style={{ width: '100%' }}>
                 <Col style={{maxWidth: '20px'}}><h5>{show == index ? '-' : '+'}</h5></Col>
                 <Col><h5>{faq.q}</h5></Col>
                 </Row>

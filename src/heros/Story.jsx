@@ -40,28 +40,28 @@ const Story = () => {
         {s.imgDirection == 'left' && width > 900 && <>
           <Row className='mt-100' style={{ justifyContent: 'center', maxWidth: '70%', minWidth: '300px' }}>
             <Col className='' style={{ maxWidth: 'fit-content', justifyContent: 'center' }}>
-              <Image className='mt-50' src={s.image} style={{ height: '15vw', maxWidth: '90vw' }} />
+              <Image className='mt-50' src={s.image} style={{ maxHeight: '15vw', maxWidth: '90%', minHeight: '18vh'}} />
             </Col>
             <Col style={{ maxWidth: '55vw', textAlign: '' }}>
-              <p className="subhead mt-20" style={{ maxWidth: '70%', minWidth: '300px' }}>{s.text}</p>
+              <p className="subhead mt-20" style={{ maxWidth: '80%', minWidth: '350px' }}>{s.text}</p>
             </Col>
           </Row>
         </>}
         {s.imgDirection == 'right' && width > 900 && <>
           <Row className='mt-100 pd-0' style={{ justifyContent: 'center', maxWidth: '70%', minWidth: '300px' }}>
             <Col style={{ maxWidth: '55vw', textAlign: ''}}>
-              <p className="subhead mt-20" style={{ maxWidth: '70%', minWidth: '300px' }}>{s.text}</p>
+              <p className="subhead mt-20" style={{ maxWidth: '80%', minWidth: '300px' }}>{s.text}</p>
             </Col>
-            <Col className='' style={{ maxWidth: 'fit-content', justifyContent: 'center' }}>
-              <Image className='mt-50' src={s.image} style={{ height: '15vw'}} />
+            <Col className='' style={{ justifyContent: 'center' }}>
+              <Image className='mt-50' src={s.image} style={{ maxHeight: '15vw', maxWidth: '90%', minHeight: '18vh'}} />
             </Col>
           </Row>
         </>}
         {(width < 901 || s.imgDirection != 'left' && s.imgDirection != 'right') && <>
           <div className='mt-100 pd-0'>
-            <Image className='' src={s.image} style={{ height: '15vw', minHeight: '250px'}}/>
+            <Image className='' src={s.image} style={{ maxHeight: '15vw', maxWidth: '90%', minHeight: '18vh'}}/>
           </div>
-          <p className="subhead mt-20" style={{ maxWidth: '60%'}}>{s.text}</p>
+          <p className="subhead mt-20" style={{ width: '800px', maxWidth: '80%'}}>{s.text}</p>
         </>}
 
       </>))
