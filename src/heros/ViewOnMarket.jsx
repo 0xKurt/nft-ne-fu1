@@ -61,7 +61,7 @@ const ViewOnMarket = () => {
               <h6>{VIEWITEMS.text}</h6>
             </div>
             <div className='mt-40'>
-              <Button>{VIEWITEMS.buttonText}</Button>
+              <Button disabled={VIEWITEMS.disabled}>{VIEWITEMS.buttonText}</Button>
             </div>
           </div>
         </div>
