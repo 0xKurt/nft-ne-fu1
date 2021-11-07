@@ -18,9 +18,9 @@ function App() {
           <Route path='/projects/nft-ne-fu1'>
             <Home />
           </Route>
-          {/* <Route path='/'>
+          <Route path='/'>
             <Home />
-          </Route> */}
+          </Route>
 
         </Switch>
         <Footer />

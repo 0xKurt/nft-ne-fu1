@@ -11,7 +11,7 @@ const WelcomeHero = () => {
       <div className='content-wrapper mt-20'>
         <Row style={{justifyContent: 'center'}}>
           <Row style={{width: '100%', justifyContent: 'center'}}>
-              <Image src={CLICKMINT} className='intext-image' />
+              {/* <Image src={CLICKMINT} className='intext-image' /> */}
           </Row>
           <Row className='mt-50' style={{width: '100%', justifyContent: 'center'}}>
               <Mint />

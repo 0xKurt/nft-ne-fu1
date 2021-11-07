@@ -18,6 +18,7 @@ const Header = () => {
           {MENU_LINKS.map(ml => (
             <Nav.Link href='#' as={Link} to={ml.to}><h5>{ml.name}</h5></Nav.Link>
           ))}
+          <Nav.Link href='#' as={Link} to={'#'}><h5 style={{color: 'silver'}}>Play Game</h5></Nav.Link>
         </Nav>
         <Nav>
         <div className='nav-bg' style={{display: 'block', margin: 'auto'}}>
