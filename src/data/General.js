@@ -214,15 +214,15 @@ export const FAQS = {
 }
 
 export const FOOTER = {
-  copyright: 'COPYRIGHT BY DINGELING',
+  copyright: 'COPYRIGHT BY Cryptosnowmen.com',
   links: [
     {
       name: 'INTERFACE CONTRACT',
-      to: 'http://www.google.de'
+      to: '#'
     },
     {
       name: 'IMPLEMENTATION CONTRACT',
-      to: 'http://www.google.de'
+      to: '#'
     },
   ],
   socialmedia: {
