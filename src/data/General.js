@@ -195,28 +195,20 @@ export const FAQS = {
   heading: 'FAQ',
   content: [
     {
-      q: 'Last Lorem ipsum dolor sit amet?',
-      a: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+      q: 'How much are the NFT?',
+      a: '0.025 ETH'
     },
     {
-      q: 'Last Lorem ipsum dolor sit amet?',
-      a: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+      q: 'How many NFTs can I mint?',
+      a: '20 at a time'
     },
     {
-      q: 'Last Lorem ipsum dolor sit amet?',
-      a: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+      q: 'How can i tell rarity?',
+      a: 'Rarity will be posted After Launch'
     },
     {
-      q: 'Last Lorem ipsum dolor sit amet?',
-      a: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
-    },
-    {
-      q: 'Last Lorem ipsum dolor sit amet?',
-      a: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
-    },
-    {
-      q: 'Last Lorem ipsum dolor sit amet?',
-      a: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+      q: 'My transaction didn\'t go thru who can talk to ?',
+      a: 'You can bring your issue to Support section in Discord'
     },
   ]
 }

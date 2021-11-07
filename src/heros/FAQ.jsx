@@ -25,7 +25,7 @@ const FAQ = () => {
 
   useEffect(() => {
     if(width >= 900) {
-      setShowImg(true)
+      // setShowImg(true)
     } else {
       setShowImg(false)
     }
