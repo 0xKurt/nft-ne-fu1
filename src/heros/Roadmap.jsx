@@ -49,7 +49,7 @@ const Roadmap = () => {
     setCards(
       ROADMAP.cards.map(c => (<Col>
         <Row className='pd-20'  style={{ justifyContent: 'center' }}>
-          <div className='small-card pd-20'>
+          <div className='small-card pd-20 roadmap-card'>
             <div>
               <img src={c.img} alt={c.heading} style={{ maxWidth: '40px' }} />
             </div>

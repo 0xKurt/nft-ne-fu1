@@ -105,10 +105,10 @@ export const STORY = {
 
 export const VIEWITEMS = {
   heading: 'View the Collection',
-  text: 'Coming soon on OpenSea..',
+  text: 'Come meet the Rescued Snowmen',
   buttonText: 'View on OpenSea',
-  disabled: true,
-  link: 'http://www.google.de',
+  disabled: false,
+  link: 'https://opensea.io/collection/cryptosnowmenproject',
   imgs: [
     mar1, mar2, mar3, mar4, mar5, mar6, mar7, mar8, mar9, mar10, mar11, mar12, mar13, mar14, mar15, mar16, mar17, mar18, mar19, mar20
   ]
@@ -218,11 +218,11 @@ export const FOOTER = {
   copyright: 'COPYRIGHT BY Cryptosnowmen.com',
   links: [
     {
-      name: 'INTERFACE CONTRACT',
-      to: '#'
+      name: 'CONTRACT ON ETHERSCAN',
+      to: 'https://etherscan.io/address/0x601954df604d63e5595466f10149188bd7b2553b'
     },
     {
-      name: 'IMPLEMENTATION CONTRACT',
+      name: '',
       to: '#'
     },
   ],

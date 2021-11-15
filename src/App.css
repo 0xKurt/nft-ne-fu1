@@ -98,12 +98,15 @@
 .small-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  width: 50vh;
-  max-width: 90%;
-  min-height: 20vh;
   border-radius: 25px;
   background-color: white !important;
   color: rgb(38, 38, 38);
+}
+
+.roadmap-card {
+  width: 50vh;
+  max-width: 90%;
+  min-height: 20vh;
 }
 
 .App {
@@ -272,6 +275,12 @@
   word-wrap: normal;
   display: inline-block;
 }
+
+.pd-15 {
+  padding: 15px 15px 15px 15px !important;
+  word-wrap: normal;
+}
+
 
 .pd-20 {
   padding: 20px 20px 20px 20px !important;

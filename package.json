@@ -2,7 +2,7 @@
   "name": "nft-ne-fu1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://merbeth.dev/projects/nft-ne-fu1",
+  "homepage": "https://cryptosnowmen.com",
   "dependencies": {
     "@biconomy/mexa": "^2.0.20",
     "@emotion/react": "^11.4.1",
@@ -12,6 +12,7 @@
     "ethers": "^5.4.7",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.4",
+    "react-countdown": "^2.3.2",
     "react-dom": "^17.0.2",
     "react-easy-marquee": "^1.1.4",
     "react-google-font-loader": "^1.1.0",
